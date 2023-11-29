@@ -3,7 +3,6 @@ const admin = require("firebase-admin");
 
 const serviceAccount = require("./serviceAccountKey1.json");
 
-
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
@@ -19,7 +18,6 @@ app.use(cors({origin: true}));
 
 // Main database reference
 const db = admin.firestore();
-
 // Routes
 app.get("/home", (req, res) => {
   return res.status(200).send("Hello Gegzo");
