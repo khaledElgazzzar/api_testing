@@ -21,7 +21,7 @@ app.use(cors({origin: true}));
 const db = admin.firestore();
 
 // Routes
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   return res.status(200).send("Hello Gegzo");
 });
 
